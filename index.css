@@ -1,0 +1,133 @@
+body {
+    
+  background: #ddd;
+  font-family: monospace;
+}
+
+.wrap{
+    position: relative;
+    margin: auto;
+    width:100%px;
+}
+.ribbon {
+  width: 100%px;
+  height: 60px;
+  
+  position: relative;
+  background:black;
+}
+.nav{
+  position:relative;
+  margin-left: 0px;
+  margin-top: -50px;
+    text-align: center;
+}
+.nav a{
+    padding: 10px;
+    width:80px;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+     
+}
+.nav a:hover{
+    background: red;
+    border-radius: 20px;
+}
+.ribbon i {
+  position: absolute
+}
+ 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 1.7rem;
+	font-family: 'Merriweather Sans', sans-serif;
+	 
+	color: #ececec;
+	padding: 4rem;
+}
+
+h2{
+	text-align: center;
+	margin-bottom: 5rem;
+	font-size: 4rem;
+}
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 240px;
+	height: 400px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+}
+
+.product .product-title, .product .product-price{
+	font-size: px;
+}
+
+.product:hover img{
+	scale:  1.1;
+}
+
+.product:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+	height: 200px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: red;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 25px;
+	transition: all 0.2s;
+}
+
+.product a:hover{
+	transform: scale(1.1);
+}
+
+
+ body{
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  color: #FFF;
+  font-size: 1.75vw; 
+    
+}
+
+ 

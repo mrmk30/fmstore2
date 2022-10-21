@@ -1,0 +1,199 @@
+*{
+     margin:0;
+     padding:0;
+     box-sizing: border-box;
+ }
+ body{
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+ }
+ .hover-effect{
+     text-align: center;
+ }
+ .hover-effect ul li{
+     display: inline-block;
+ }
+ .hover-effect ul li a{
+     font-size:40px;
+     color:#fff;
+     margin:0px 10px;
+     line-height: 100px;
+     display: inline-block;
+     width:100px;
+     height:100px;
+     border-radius: 100%;
+     transition: 0.3s all;
+ }
+ .facebook{
+     background-color: #0d47a1;
+ }
+ .hover-effect ul li:hover .facebook{
+     box-shadow: 0px 0px 20px 0px #0d47a1;
+     transform: scale(1.3);
+ }
+ .twitter{
+    background-color: #1da1f2;
+}
+.hover-effect ul li:hover .twitter{
+    box-shadow: 0px 0px 20px 0px #1da1f2;
+    transform: scale(1.3);
+}
+.youtube{
+    background-color: #e62b38;
+}
+.hover-effect ul li:hover .youtube{
+    box-shadow: 0px 0px 20px 0px #e62b38;
+    transform: scale(1.3);
+}
+.vimeo{
+    background-color: #000;
+}
+.hover-effect ul li:hover .vimeo{
+    box-shadow: 0px 0px 20px 0px #000;
+    transform: scale(1.3);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+:root {
+  /* Base font size */
+  font-size: 10px;   
+  
+  /* Set neon color */
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
+}
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background: #000;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 13rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #fff;
+  padding: 4rem 6rem 5.5rem;
+  border: 0.4rem solid #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;     
+}
+
+h1::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+h1::selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+h1:focus {
+  outline: none;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color);
+        
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  background-blend-mode: hard-light;
+  background-image: linear-gradient(rgba(6, 6, 6, 0.9), rgba(0, 0, 0, 0.9)),
+    url(https://images.pexels.com/photos/1227515/pexels-photo-1227515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  padding: 0;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "BPneon", "Comfortaa", cursive;
+  letter-spacing: 3px;
+}
+
+.container {
+  min-width: 1000px;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(
+    rgb(255 190 0 / 20%) 0%,
+    rgba(70, 140, 255, 0.2) 52%,
+    transparent 70%
+  );
+}
+
+.blue-neon {
+  display: none;
+  width: 970px;
+  height: 240px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 0 2px 4px rgba(200, 230, 255, 0.5),
+    0 -2px 2px 3px rgba(200, 230, 255, 0.5) inset,
+    0 0 2px 10px rgba(100, 150, 255, 0.9),
+    0 0 2px 7px rgba(100, 150, 255, 1) inset,
+    0 0 12px 13px rgba(0, 50, 255, 0.9),
+    0 0 12px 11px rgba(0, 50, 255, 0.7) inset,
+    0 8px 30px 18px rgba(0, 0, 0, 0.8), 0 8px 25px 12px rgba(0, 0, 0, 0.7) inset;
+}
+
+.yellow-neon {
+  padding-top: 20px;
+  text-align: center;
+  color: rgba(255, 232, 50, 0.9);
+  text-shadow: 0 0 5px rgba(255, 245, 0, 1), 0 0 28px rgba(255, 44, 0, 0.9),
+    0 8px 38px black, 0 8px 10px black, 0 2px 12px black,
+    0 0 50px rgba(255, 120, 0, 0.5), 0 0 24px rgba(255, 255, 255, 0.8);
+  -webkit-text-stroke: 1px rgba(255, 160, 0, 0.45);
+}
